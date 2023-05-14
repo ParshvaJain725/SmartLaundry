@@ -1,3 +1,3 @@
-# creaseart_website
+# SmartLaundry_website
 
 An online service website into making related to laundry.

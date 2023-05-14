@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Laundry</title>
+
+    <script src="particles.js"></script>
+    <!--For bubble particles -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+</head>
+
+<body>
+
+    <div id="particles-js">
+
+        <!-- Navigation header starts-->
+        <header class="header">
+
+            <div class="logo-box">
+
+                <!-- <a href="index.html"><img src="img/creaseart_logo.png" alt="logo" class="logo"></a> -->
+
+            </div>
+
+            <!-- Menu Starts-->
+            <div id="myNav" class="nav-box">
+
+                <a href="#login" onclick="openLogform()">Login</a>
+                <a href="#signup" class="btn btn-white" onclick="openSignform()">Sign Up</a>
+
+            </div>
+
+            <!-- Login Form Starts -->
+            <div id="login" class="overlay">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeLogform()">&times;</a>
+
+                <div class="overlay-content">
+
+                    <h4>Login</h4>
+
+                    <div class="login-content">
+                        <form action="" class="form">
+
+                            <div class="input-div one">
+                                <div class="div">
+                                    <h5>Phone No.*</h5>
+                                    <input type="tel" class="input" autocomplete="tel" name="phone"
+                                        pattern="{+91}-[0-9]{5}-[0-9]{5}" min="10" max="13" required>
+                                </div>
+                            </div>
+
+                            <input type="submit" class="btn" value="Log In">
+                            <p>or <span><a href="#signup" onclick="openSignform()">create an account</a></span></p>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Login Forms ends -->
+
+            <!-- Sign Up form starts -->
+            <div id="signup" class="overlay">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSignform()">&times;</a>
+
+                <div class="overlay-content">
+
+                    <h4>Sign Up</h4>
+
+                    <div class="login-content">
+                        <form action="" class="form">
+
+                            <div class="input-div one">
+                                <div class="div">
+                                    <h5>Phone No.*</h5>
+                                    <input type="tel" class="input" autocomplete="tel" name="phone"
+                                        pattern="{+91}-[0-9]{5}-[0-9]{5}" min="10" max="13" required>
+                                </div>
+                            </div>
+
+                            <div class="input-div one">
+                                <div class="div">
+                                    <h5>Name*</h5>
+                                    <input type="text" class="input" autocomplete="name" required>
+                                </div>
+                            </div>
+
+                            <div class="input-div one">
+                                <div class="div">
+                                    <h5>Email*</h5>
+                                    <input type="email" class="input" autocomplete="email" required>
+                                </div>
+                            </div>
+
+                            <div class="input-div pass">
+                                <div class="div">
+                                    <h5>Password*</h5>
+                                    <input type="password" class="input signUppassword-input" required>
+                                </div>
+                            </div>
+
+                            <div class="input-div confirm_pass">
+                                <div class="div">
+                                    <h5>Confirm Password*</h5>
+                                    <input type="password" class="input confirm_password-input" required>
+                                </div>
+                            </div>
+
+                            <p class="error-message"></p>
+
+                            <input type="submit" class="btn" value="Sign Up">
+                            <p>or <span><a href="#login" onclick="openLogform()">login to your account</a></span></p>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Sign Up form ends -->
+            <!-- Menu ends -->
+            <!-- Navigation header ends-->
+
+            <div class="header_content">
+
+                <div class="text-box">
+
+                    <h1 class="heading-primary">
+
+                        <span class="heading-primary-main">Smart<span class="art">Laundry</span></span>
+                        <span class="heading-primary-sub">Where Clothes Feel Homely</span>
+
+                    </h1>
+
+                    <!-- Search Box to make you search various vendors nearby -->
+                    <div class="search-box">
+
+                        <form action="vendor-list.html" method="GET">
+
+                            <input type="text" name="search" placeholder="Enter Location" class="search-bar">
+                            <span>
+
+                                <button type="submit" class="btn-search"
+                                    onclick="location.href='vendor-list.html';">Find Vendor</button>
+
+                            </span>
+                        </form>
+
+                    </div>
+
+                    <h6>Popular Regions We Deliver</h6>
+                    <div class="popular_cities">
+                        <p><a href="#">Nagpur</a></p>
+                        <p><a href="#">Surat</a></p>
+                        <p><a href="#">Bihar</a></p>
+                        <p><a href="#">Chennai</a></p>
+                        <p><a href="#">Bangalore</a></p>
+                    </div>
+
+                </div>
+
+                <!-- Rotating Image of Washing Image -->
+                <span class="spinner-box">
+
+                    <!-- <img src="img/spinner.png" alt="spin-image" class="spinner"> -->
+
+                </span>
+
+            </div>
+
+        </header>
+
+    </div>
+
+    <main class="container">
+
+        <!-- Section to tell about how creaseart application works -->
+        <section class="how_it_works">
+            <h3>HOW IT WORKS?</h3>
+            <h5>We have made laundry service easy and fast</h5>
+
+            <div class="how_it_works_section row">
+                <span class="how_it_works_section_box col-md">
+                    <img src="img/app-icon.png" alt="app-icon">
+                    <p>Find the best laundry service near you and order</p>
+                </span>
+                <span class="how_it_works_section_box col-md">
+                    <img src="img/delivery-guy.png" alt="delivery-guy">
+                    <p>We will pickup it from your door and deliver it at your door</p>
+                </span>
+                <span class="how_it_works_section_box col-md">
+                    <img src="img/delivery-guy.png" alt="delivery-guy">
+                    <p>We will pickup it from your door and deliver it at your door</p>
+                </span>
+            </div>
+        </section>
+
+        <!-- Section where there will be links to download creaseart application from app store and play store. -->
+        <section class="download_app row">
+            <div class="download_app_text col-md">
+                <h2>Laundry Just One Step Away</h2>
+                <!-- <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, id!</h6> -->
+                <span class="download_app_link">
+                    <img src="img/apple-ios-badge.png" alt="apple-ios-badge"> <!-- Link for ios app store. -->
+                    <img src="img/google-play-badge.png" alt="google-play-badge"> <!-- Link for google play store. -->
+                </span>
+            </div>
+            <div class="download_app_screenshots col-md">
+                <!-- <img src="img/app-screenshot.png" alt="app-screenshot"> Screenshots of creaseart app. -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_social_bar row">
+                <!-- <a href="index.html" class="col-lg-10"><img src="img/creaseart_logo.png" alt="logo" class="logo"></a> -->
+
+                <!-- Creaseart's social media links -->
+                <span class="footer_social_links col-lg-2">
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </span>
+            </div>
+            <div class="footer_sections row">
+                <div class="col-md">
+                    <h6>About Smart Laundry</h6>
+                    <p>Laundry Application is an innovative and beneficial app designed by our company in an effort to
+                        modernise the laundry & dry-cleaning industry. It also offers the consumers to identify the
+                        right vendor for their cleaning needs.</p>
+                </div>
+                <div class="col-md">
+                    <h6>Important Links</h6>
+                    <p><a href="About_Us.html">About Us</a></p>
+                    <p><a href="#">Help & Support</a></p>
+                    <p><a href="#">Offers</a></p>
+                    <p><a href="#">Become a Partner</a></p>
+                </div>
+                <div class="col-md">
+                    <!-- <h6>Contact Us</h6>
+                    <p><i class="fa fa-map-marker"></i> <a
+                            href="https://www.google.com/maps/search/512,+5th+Floor,+Tower+A,+Spaze+I+Tech+Park,+Sohna+Road,+Sector+49,+122018+Gurugram,+Haryana/@28.4132101,77.0409667,17z/data=!3m1!4b1" target="_blank">512,
+                            5th Floor, Tower A, Spaze I Tech Park, Sohna Road, Sector 49, 122018 Gurugram, Haryana</a>
+                    </p>
+                    <p><i class="fa fa-phone"></i> <a href="tel:+918102020271"> +91 81020 20271</a></p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:info@creaseart.com"> info@creaseart.com</a></p> -->
+                    <span class="download_app_link">
+                        <img src="img/apple-ios-badge.png" alt="apple-ios-badge"> <!-- Link for ios app store. -->
+                        <img src="img/google-play-badge.png" alt="google-play-badge">
+                        <!-- Link for google play store. -->
+                    </span>
+                </div>
+            </div>
+
+            <div class="footer_sections_extra">
+                <span><a href="#">Privacy</a></span>
+                <span><a href="#">Terms</a></span>
+                <span><a href="#">Blog</a></span>
+                <span><a href="#">Sitemap</a></span>
+            </div>
+
+            <!-- <p class="disclaimer">By continuing past this page, you agree to our Terms of Service, Cookie Policy,
+                Privacy Policy and Content Policies. All trademarks are properties of their respective owners. ©
+                2008-2020 - Creaseart Pvt Ltd. All rights reserved.</p> -->
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <!-- Particle JS script -->
+    <script>
+        particlesJS.load('particles-js', 'particles.json');
+    </script>
+
+</body>
+
+</html>

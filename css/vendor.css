@@ -1,0 +1,485 @@
+nav .breadcrumb {
+  margin-top: 30px;
+}
+
+nav .breadcrumb li {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+nav .breadcrumb li a {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.vendor_detail {
+  padding: 0;
+}
+
+.vendor_detail .vendor_detail_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  padding: 2rem 4rem;
+  margin: 0;
+}
+
+.vendor_detail .vendor_detail_banner .company_logo {
+  margin-right: 40px;
+  max-width: 20%;
+  height: auto;
+}
+
+.vendor_detail .vendor_detail_banner .vendor_detail_summary {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.vendor_detail .vendor_detail_banner .vendor_detail_summary div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vendor_detail .vendor_detail_banner .vendor_detail_summary div span {
+  margin-right: 20px;
+  font-size: 16px;
+  padding-right: 20px;
+}
+
+.vendor_detail .vendor_detail_banner .vendor_detail_summary div span:nth-child(1), .vendor_detail .vendor_detail_banner .vendor_detail_summary div span:nth-child(2) {
+  border-right: solid 1.5px;
+}
+
+.vendor_detail .vendor_detail_banner .vendor_detail_summary div span p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.vendor_detail .vendor_detail_banner .vendor_detail_summary div .fa-star {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+  padding: 0.1rem;
+}
+
+.vendor_detail .detail_service_cart {
+  padding: 5rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vendor_detail .detail_service_cart .service_order {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vendor_detail .detail_service_cart .service_order .nav {
+  padding-right: 2rem;
+  border: none;
+  border-right: solid 1.5px #3a3a3a;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.vendor_detail .detail_service_cart .service_order .nav .nav-item {
+  margin-bottom: 1rem;
+  border-radius: 2px;
+}
+
+.vendor_detail .detail_service_cart .service_order .nav .nav-item .nav-link {
+  font-size: 16px;
+  background-color: #ededed;
+  color: #3a3a3a;
+  text-transform: uppercase;
+}
+
+.vendor_detail .detail_service_cart .service_order .nav .nav-item .active {
+  background-color: #bc3935;
+  -webkit-box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  color: #fff;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent {
+  padding: 0 2rem;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent .nav {
+  border: none;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent .nav .nav-link {
+  font-size: 14px;
+  background-color: unset;
+  border: none;
+  border-radius: 0;
+  text-transform: capitalize;
+  padding: 0.5rem 1.75rem;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent .nav .active {
+  background-color: #bc3935;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  color: #fff;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent table {
+  overflow-x: auto;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent table th {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent table th:nth-child(3) {
+  text-align: center;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent table td {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent table td:nth-child(3) {
+  text-align: center;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent table td input {
+  width: 50px;
+  border: solid 0.3px #707070;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  margin-left: -5px;
+  margin-right: -5px;
+  text-align: center;
+  padding: 0.25rem 0;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent table td button {
+  background-color: #fff;
+  padding: 0.25rem;
+  border: solid 0.3px #707070;
+  outline: none;
+  cursor: pointer;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent table td button:first-child {
+  border-right: none;
+}
+
+.vendor_detail .detail_service_cart .service_order #myTabContent table td button:last-child {
+  border-left: none;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table thead {
+  border: none;
+  border-bottom: solid 1.5px #646464;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table thead th {
+  font-size: 14px;
+  padding: 0.75rem 0;
+  color: #646464;
+  text-transform: uppercase;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tbody tr:last-child {
+  border-bottom: solid 1px #ededed;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tbody tr td {
+  font-size: 14px;
+  padding: 0.75rem 0;
+  text-transform: capitalize;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tbody tr td:nth-child(2) {
+  padding: 0 3rem;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tbody tr td input {
+  width: 50px;
+  border: solid 0.3px #707070;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  margin-left: -5px;
+  margin-right: -5px;
+  text-align: center;
+  padding: 0.25rem 0;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tbody tr td button {
+  background-color: #fff;
+  padding: 0.25rem;
+  border: solid 0.3px #707070;
+  outline: none;
+  cursor: pointer;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tbody tr td button:first-child {
+  border-right: none;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tbody tr td button:last-child {
+  border-left: none;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tfoot tr:nth-child(2) {
+  border-bottom: solid 1.25px #ededed;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tfoot tr:nth-child(2) th {
+  color: #646464;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tfoot tr th {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tfoot tr td {
+  font-size: 14px;
+  padding: 0.25rem 0;
+  text-transform: capitalize;
+}
+
+.vendor_detail .detail_service_cart .detail_cart table tfoot tr:last-child button {
+  font-size: 16px;
+  background-color: #bc3935;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 5rem;
+  text-transform: uppercase;
+}
+
+.vendor_detail .add-on_services h6 {
+  text-transform: capitalize;
+}
+
+.vendor_detail .add-on_services .add-services {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.vendor_detail .add-on_services .add-services span {
+  text-align-last: center;
+}
+
+.vendor_detail .add-on_services .add-services span img {
+  height: 60px;
+}
+
+.vendor_detail .add-on_services .add-services span p {
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+  text-transform: capitalize;
+}
+
+.vendor_detail .add-on_services .add-services span button {
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #707070;
+  font-size: 14px;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+  .vendor_detail .detail_service_cart {
+    max-width: 97%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .vendor_detail .detail_service_cart .detail_cart table tbody tr td:nth-child(2) {
+    padding: 0rem;
+  }
+  .vendor_detail .detail_service_cart .detail_cart table tfoot tr:last-child button {
+    padding: 0.75rem 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .vendor_detail .detail_service_cart .detail_cart {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .vendor_detail .detail_service_cart .service_order #myTabContent .nav .nav-link {
+    padding: 0.5rem 1.25rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .vendor_detail .vendor_detail_banner .company_logo {
+    max-width: 30%;
+  }
+  .vendor_detail .detail_service_cart {
+    max-width: 720px;
+    display: -ms-grid;
+    display: grid;
+  }
+  .vendor_detail .detail_service_cart .detail_cart h6 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .vendor_detail .detail_service_cart .detail_cart table {
+    margin: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .vendor_detail .vendor_detail_banner {
+    padding: 2rem 1rem;
+  }
+  .vendor_detail .detail_service_cart .service_order {
+    display: -ms-grid;
+    display: grid;
+  }
+  .vendor_detail .detail_service_cart .service_tabs h6 {
+    text-align: center;
+  }
+  .vendor_detail .detail_service_cart .service_order .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    border-right: none;
+    border-bottom: solid 1.5px #ededed;
+    padding-right: 0;
+    margin: auto;
+  }
+  .vendor_detail .detail_service_cart .service_order #myTabContent {
+    padding: 1rem 2rem 0;
+    border-bottom: solid 1.5px #ededed;
+  }
+  .vendor_detail .detail_service_cart .service_order .nav .nav-item {
+    margin-right: 5px;
+  }
+  .vendor_detail .detail_service_cart {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    padding: 3rem 0 2rem;
+  }
+  .vendor_detail .detail_service_cart .detail_cart table {
+    width: 90%;
+  }
+  .vendor_detail .detail_service_cart .detail_cart table tbody tr td {
+    width: 33%;
+  }
+  .vendor_detail .detail_service_cart .detail_cart table tbody tr td:nth-child(2) {
+    text-align: center;
+  }
+  .vendor_detail .detail_service_cart .detail_cart table tbody tr td:nth-child(3), .vendor_detail .detail_service_cart .detail_cart table tfoot tr td:nth-child(2) {
+    text-align: right;
+  }
+}
+
+@media (max-width: 600px) {
+  .vendor_detail .vendor_detail_banner {
+    display: -ms-grid;
+    display: grid;
+  }
+  .vendor_detail .vendor_detail_banner .company_logo {
+    max-width: 40%;
+  }
+  .vendor_detail .vendor_detail_banner .vendor_detail_summary {
+    margin-top: 1rem;
+  }
+  .vendor_detail .vendor_detail_banner .vendor_detail_summary div {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+}
+
+@media (max-width: 484px) {
+  .vendor_detail .detail_service_cart .service_order .nav {
+    display: -ms-grid;
+    display: grid;
+    grid: auto/repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 414px) {
+  .vendor_detail .vendor_detail_banner .company_logo {
+    max-width: 50%;
+  }
+  .vendor_detail .vendor_detail_banner .vendor_detail_summary h4 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 384px) {
+  .vendor_detail .vendor_detail_banner .vendor_detail_summary div span p {
+    font-size: 12px;
+  }
+  .vendor_detail .detail_service_cart .service_order .nav .nav-item .nav-link {
+    font-size: 14px;
+  }
+  .vendor_detail .add-on_services .add-services {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    margin: 1rem 0 2rem;
+  }
+  .vendor_detail .add-on_services .add-services span {
+    padding: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: solid 1px #646464;
+    border-bottom: solid 1px #646464;
+  }
+}
+
+@media (max-width: 375px) {
+  .vendor_detail .detail_service_cart .service_order #myTabContent {
+    padding: 1rem 1rem 0;
+  }
+}
+
+@media (max-width: 331px) {
+  .vendor_detail .detail_service_cart .service_order #myTabContent {
+    padding: 0 0.5rem;
+  }
+}
+/*# sourceMappingURL=vendor.css.map */

@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/vendor-list.css">
+
+    <title>Vendor Details</title>
+</head>
+
+<body>
+
+    <!-- Navigation header starts-->
+    <header class="vendor_list_nav">
+
+        <div class="vendor_list_nav_one">
+            <!-- <a href="index.html"><img src="img/creaseart_logo.png" alt="logo" class="logo"></a> -->
+            <!-- Search address -->
+            <form>
+                <input type="text" class="address_search" name="search" placeholder="Address..">
+            </form>
+        </div>
+
+        <!-- Menu starts -->
+        <div id="myNav" class="vendor_list_nav_two vendor_overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Cross icon which will appear when login/sign up form appears from side bar -->
+            <div class="vendor_content">
+                <!-- Search within web page -->
+                <form>
+                    <input type="text" name="search" placeholder="Search..">
+                </form>
+
+                <span><a href="#"><i class="fa fa-percent"></i> Offers</a></span>
+                <!-- Link to discounts offered by various vendors -->
+                <span><a href="#"><i class="fa fa-question-circle"></i> Help</a></span>
+                <!-- Help link related to the website -->
+                <span><a href="#signup" onclick="openSignform()"><i class="fa fa-user"></i> Sign Up</a></span>
+                <span><a href="#"><i class="fa fa-shopping-cart"></i> Cart</a></span>
+            </div>
+        </div>
+        <span class="ham-icon" onclick="openNav()">&#9776;</span>
+        <!-- Hamburger icon which will appear in place of menu in mobile view -->
+
+        <!-- Login Form Starts -->
+        <div id="login" class="overlay">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeLogform()">&times;</a>
+
+            <div class="overlay-content">
+
+                <h4>Login</h4>
+
+                <div class="login-content">
+                    <form action="" class="form">
+
+                        <div class="input-div one">
+                            <div class="div">
+                                <h5>Phone No.*</h5>
+                                <input type="tel" class="input" autocomplete="tel" name="phone"
+                                    pattern="{+91}-[0-9]{5}-[0-9]{5}" min="10" max="13" required>
+                            </div>
+                        </div>
+
+                        <input type="submit" class="btn" value="Log In">
+                        <p>or <span><a href="#signup" onclick="openSignform()">create an account</a></span></p>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Login Forms ends -->
+
+        <!-- Sign Up form starts -->
+        <div id="signup" class="overlay">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSignform()">&times;</a>
+
+            <div class="overlay-content">
+
+                <h4>Sign Up</h4>
+
+                <div class="login-content">
+                    <form action="" class="form">
+
+                        <div class="input-div one">
+                            <div class="div">
+                                <h5>Phone No.*</h5>
+                                <input type="tel" class="input" autocomplete="tel" name="phone"
+                                    pattern="{+91}-[0-9]{5}-[0-9]{5}" min="10" max="13" required>
+                            </div>
+                        </div>
+
+                        <div class="input-div one">
+                            <div class="div">
+                                <h5>Name*</h5>
+                                <input type="text" class="input" autocomplete="name" required>
+                            </div>
+                        </div>
+
+                        <div class="input-div one">
+                            <div class="div">
+                                <h5>Email*</h5>
+                                <input type="email" class="input" autocomplete="email" required>
+                            </div>
+                        </div>
+
+                        <div class="input-div pass">
+                            <div class="div">
+                                <h5>Password*</h5>
+                                <input type="password" class="input signUppassword-input" required>
+                            </div>
+                        </div>
+
+                        <div class="input-div confirm_pass">
+                            <div class="div">
+                                <h5>Confirm Password*</h5>
+                                <input type="password" class="input confirm_password-input" required>
+                            </div>
+                        </div>
+
+                        <p class="error-message"></p>
+
+                        <input type="submit" class="btn" value="Sign Up">
+                        <p>or <span><a href="#login" onclick="openLogform()">login to your account</a></span></p>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Sign Up form ends -->
+        <!-- Menu ends -->
+        <!-- Navigation header ends-->
+    </header>
+
+    <!-- Vendor Details and cart -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-white mg-t-30">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Nagpur</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Let's Laundry</li>
+        </ol>
+    </nav>
+
+    <main class="vendor_detail">
+        <!-- Photo and details of the selected vendor -->
+        <section class="vendor_detail_banner">
+            <!-- <img src="https:\/\/www.creaseart.com\/itf_public\/company_logo\/vendor_company1546411933.jpg" -->
+                <!-- alt="Let's Laundry" class="company_logo"> -->
+            <div class="vendor_detail_summary">
+                <h4>Let's Laundry</h4>
+                <p>Sec 23 Market, Nagpur, Maharastra</p>
+                <div>
+                    <span class="vendor_rating"><i class="fa fa-star"></i> 1 <p>100+ Ratings</p> </span>
+                    <!-- <span>|</span> -->
+                    <span class="vendor_delivery">1 Day <p>Delivery Time</p> </span>
+                    <!-- <span>|</span> -->
+                    <span class="vendor_distance">1.5 Km <p>Distance</p> </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail_service_cart container">
+
+            <div class="service_tabs">
+                <h6>Select Services</h6>
+                <div class="service_order">
+                    <!-- service tabs -->
+                    <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="drycleaning-tab" data-toggle="tab" href="#drycleaning"
+                                role="tab" aria-controls="drycleaning" aria-selected="true">Dry CLeaning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="laundry-tab" data-toggle="tab" href="#laundry" role="tab"
+                                aria-controls="laundry" aria-selected="false">Laundry</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#wash&fold" role="tab"
+                                aria-controls="wash&fold" aria-selected="false">Wash & Fold</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="wash&iron-tab" data-toggle="tab" href="#wash&iron" role="tab"
+                                aria-controls="wash&iron" aria-selected="false">Wash & Iron</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
+
+                        <!-- Categories under Dry Cleaning Service -->
+                        <div class="tab-pane fade show active" id="drycleaning" role="tabpanel"
+                            aria-labelledby="drycleaning-tab">
+                            <ul class="nav nav-pills nav-fill" id="drycleaningTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="men-tab" data-toggle="tab" href="#dcmen" role="tab"
+                                        aria-controls="men" aria-selected="true">Men</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="women-tab" data-toggle="tab" href="#dcwomen" role="tab"
+                                        aria-controls="women" aria-selected="false">Women</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="kids-tab" data-toggle="tab" href="#dckids" role="tab"
+                                        aria-controls="kids" aria-selected="false">Kids</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="households-tab" data-toggle="tab" href="#dchouseholds"
+                                        role="tab" aria-controls="households" aria-selected="false">Households</a>
+                                </li>
+                            </ul>
+
+                            <!-- Dry cleaning service content -->
+                            <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="drycleaningTabContent">
+                                <!-- Men category -->
+                                <div class="tab-pane fade show active table-responsive" id="dcmen" role="tabpanel"
+                                    aria-labelledby="men-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- Women Category -->
+                                <div class="tab-pane fade table-responsive" id="dcwomen" role="tabpanel"
+                                    aria-labelledby="women-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- Kids Category -->
+                                <div class="tab-pane fade table-responsive" id="dckids" role="tabpanel"
+                                    aria-labelledby="kids-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- Households Category -->
+                                <div class="tab-pane fade table-responsive" id="dchouseholds" role="tabpanel"
+                                    aria-labelledby="households-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">Curtains</td>
+                                                <td>200</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Covers</td>
+                                                <td>150</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Carpets</td>
+                                                <td>350</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Categories under Laundry Service -->
+                        <div class="tab-pane fade" id="laundry" role="tabpanel" aria-labelledby="laundry-tab">
+                            <ul class="nav nav-pills nav-fill" id="laundryTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="men-tab" data-toggle="tab" href="#lmen" role="tab"
+                                        aria-controls="men" aria-selected="true">Men</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="women-tab" data-toggle="tab" href="#lwomen" role="tab"
+                                        aria-controls="women" aria-selected="false">Women</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="kids-tab" data-toggle="tab" href="#lkids" role="tab"
+                                        aria-controls="kids" aria-selected="false">Kids</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="households-tab" data-toggle="tab" href="#lhouseholds"
+                                        role="tab" aria-controls="households" aria-selected="false">Households</a>
+                                </li>
+                            </ul>
+
+                            <!-- Laundry Service Content -->
+                            <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="laundryTabContent">
+
+                                <!-- Men category -->
+                                <div class="tab-pane fade show active table-responsive" id="lmen" role="tabpanel"
+                                    aria-labelledby="men-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- Women category -->
+                                <div class="tab-pane fade table-responsive" id="lwomen" role="tabpanel"
+                                    aria-labelledby="women-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- Kids Category -->
+                                <div class="tab-pane fade table-responsive" id="lkids" role="tabpanel"
+                                    aria-labelledby="kids-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- Households Category -->
+                                <div class="tab-pane fade table-responsive" id="lhouseholds" role="tabpanel"
+                                    aria-labelledby="households-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">Curtains</td>
+                                                <td>200</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Covers</td>
+                                                <td>150</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Carpets</td>
+                                                <td>350</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Categories under Wash & Fold Service -->
+                        <div class="tab-pane fade" id="wash&fold" role="tabpanel" aria-labelledby="wash&fold-tab">
+                            <ul class="nav nav-pills nav-fill" id="wash&foldTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="men-tab" data-toggle="tab" href="#wfmen" role="tab"
+                                        aria-controls="men" aria-selected="true">Men</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="women-tab" data-toggle="tab" href="#wfwomen" role="tab"
+                                        aria-controls="women" aria-selected="false">Women</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="kids-tab" data-toggle="tab" href="#wfkids" role="tab"
+                                        aria-controls="kids" aria-selected="false">Kids</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="households-tab" data-toggle="tab" href="#wfhouseholds"
+                                        role="tab" aria-controls="households" aria-selected="false">Households</a>
+                                </li>
+                            </ul>
+
+                            <!-- Wash & Fold service content -->
+                            <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="drycleaningTabContent">
+
+                                <!-- Men category -->
+                                <div class="tab-pane fade show active table-responsive" id="wfmen" role="tabpanel"
+                                    aria-labelledby="men-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- Women category -->
+                                <div class="tab-pane fade table-responsive" id="wfwomen" role="tabpanel"
+                                    aria-labelledby="women-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- Kids category -->
+                                <div class="tab-pane fade table-responsive" id="wfkids" role="tabpanel"
+                                    aria-labelledby="kids-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- HOuseholds category -->
+                                <div class="tab-pane fade table-responsive" id="wfhouseholds" role="tabpanel"
+                                    aria-labelledby="households-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">Curtains</td>
+                                                <td>200</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Covers</td>
+                                                <td>150</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Carpets</td>
+                                                <td>350</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Categories under Wash & Iron Service -->
+                        <div class="tab-pane fade" id="wash&iron" role="tabpanel" aria-labelledby="wash&iron-tab">
+                            <ul class="nav nav-pills nav-fill" id="wash&ironTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="men-tab" data-toggle="tab" href="wi#men" role="tab"
+                                        aria-controls="men" aria-selected="true">Men</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="women-tab" data-toggle="tab" href="#wiwomen" role="tab"
+                                        aria-controls="women" aria-selected="false">Women</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="kids-tab" data-toggle="tab" href="#wikids" role="tab"
+                                        aria-controls="kids" aria-selected="false">Kids</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="households-tab" data-toggle="tab" href="#wihouseholds"
+                                        role="tab" aria-controls="households" aria-selected="false">Households</a>
+                                </li>
+                            </ul>
+
+                            <!-- Wash & Iron Category -->
+                            <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="drycleaningTabContent">
+
+                                <!-- Men Category -->
+                                <div class="tab-pane fade show active table-responsive" id="wimen" role="tabpanel"
+                                    aria-labelledby="men-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- Women Category -->
+                                <div class="tab-pane fade table-responsive" id="wiwomen" role="tabpanel"
+                                    aria-labelledby="women-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- Kids category -->
+                                <div class="tab-pane fade table-responsive" id="wikids" role="tabpanel"
+                                    aria-labelledby="kids-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">T-shirt</td>
+                                                <td>100</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Jeans</td>
+                                                <td>120</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Kurta</td>
+                                                <td>50</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- Households category -->
+                                <div class="tab-pane fade table-responsive" id="wihouseholds" role="tabpanel"
+                                    aria-labelledby="households-tab">
+
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Clothes List</th>
+                                                <th scope="col">Price (&#8377;)</th>
+                                                <th scope="col">Qty</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">Curtains</td>
+                                                <td>200</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Covers</td>
+                                                <td>150</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Carpets</td>
+                                                <td>350</td>
+                                                <td>
+                                                    <button type="button" value="-" class="minus">-</button>
+                                                    <input type="text" value="1" name="quantity" />
+                                                    <button type="button" value="+" class="plus">+</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Cart section -->
+            <div class="detail_cart">
+                <h6>Cart</h6>
+                <table>
+                    <thead>
+                        <tr>
+                            <!-- To show total items in cart -->
+                            <th colspan="3">6 ITEMS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>T-shirt</td>
+                            <td>
+                                <button type="button" value="-" class="minus">-</button>
+                                <input type="text" value="1" name="quantity" />
+                                <button type="button" value="+" class="plus">+</button>
+                            </td>
+                            <td>&#8377; 100</td>
+                        </tr>
+                        <tr>
+                            <td>Jeans</td>
+                            <td>
+                                <button type="button" value="-" class="minus">-</button>
+                                <input type="text" value="1" name="quantity" />
+                                <button type="button" value="+" class="plus">+</button>
+                            </td>
+                            <td>&#8377; 120</td>
+                        </tr>
+                        <tr>
+                            <td>Kurta</td>
+                            <td>
+                                <button type="button" value="-" class="minus">-</button>
+                                <input type="text" value="1" name="quantity" />
+                                <button type="button" value="+" class="plus">+</button>
+                            </td>
+                            <td>&#8377; 50</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <!-- Price of add-on services below -->
+                            <th colspan="2">Add-on</th>
+                            <td>&#8377; 60</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Subtotal</th>
+                            <td>&#8377; 60</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <!-- Will go to checkout page -->
+                                <button type="submit" class="checkout" onclick="location.href='checkout.html';">CHECKOUT <i class="fa fa-arrow-right"></i> </button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section class="add-on_services container">
+            <h6>Add-on Services</h6>
+            <div class="add-services">
+                <span>
+                    <img src="img/Antiseptic@3x.png" alt="antiseptic">
+                    <p>Antiseptic</p>
+                    <p>&#8377; 120</p>
+                    <button type="button" value="+">ADD +</button>
+                </span>
+                <span>
+                    <img src="img/emulsifier_icon@3x.png" alt="emulsifier">
+                    <p>Emulsifier</p>
+                    <p>&#8377; 120</p>
+                    <button type="button" value="+">ADD +</button>
+                </span>
+                <span>
+                    <img src="img/neutralizer_icon@3x.png" alt="neutraliser">
+                    <p>Neutraliser</p>
+                    <p>&#8377; 110</p>
+                    <button type="button" value="+">ADD +</button>
+                </span>
+                <span>
+                    <img src="img/softner_icon@3x.png" alt="softner">
+                    <p>Softner</p>
+                    <p>&#8377; 90</p>
+                    <button type="button" value="+">ADD +</button>
+                </span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_social_bar row">
+                <!-- <a href="index.html" class="col-lg-10"><img src="img/creaseart_logo.png" alt="logo" class="logo"></a> -->
+
+                <!-- Creaseart's social media links -->
+                <span class="footer_social_links col-lg-2">
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </span>
+            </div>
+            <div class="footer_sections row">
+                <div class="col-md">
+                    <h6>About Smart Laundry</h6>
+                    <p>Laundry Application is an innovative and beneficial app designed by our company in an effort to
+                        modernise the laundry & dry-cleaning industry. It also offers the consumers to identify the
+                        right vendor for their cleaning needs.</p>
+                </div>
+                <div class="col-md">
+                    <h6>Important Links</h6>
+                    <p><a href="About_Us.html">About Us</a></p>
+                    <p><a href="#">Help & Support</a></p>
+                    <p><a href="#">Offers</a></p>
+                    <p><a href="#">Become a Partner</a></p>
+                </div>
+                <div class="col-md">
+                    <!-- <h6>Contact Us</h6>
+                    <p><i class="fa fa-map-marker"></i> <a
+                            href="https://www.google.com/maps/search/512,+5th+Floor,+Tower+A,+Spaze+I+Tech+Park,+Sohna+Road,+Sector+49,+122018+Gurugram,+Haryana/@28.4132101,77.0409667,17z/data=!3m1!4b1" target="_blank">512,
+                            5th Floor, Tower A, Spaze I Tech Park, Sohna Road, Sector 49, 122018 Gurugram, Haryana</a>
+                    </p>
+                    <p><i class="fa fa-phone"></i> <a href="tel:+918102020271"> +91 81020 20271</a></p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:info@creaseart.com"> info@creaseart.com</a></p> -->
+                    <span class="download_app_link">
+                        <img src="img/apple-ios-badge.png" alt="apple-ios-badge"> <!-- Link for ios app store. -->
+                        <img src="img/google-play-badge.png" alt="google-play-badge">
+                        <!-- Link for google play store. -->
+                    </span>
+                </div>
+            </div>
+
+            <div class="footer_sections_extra">
+                <span><a href="#">Privacy</a></span>
+                <span><a href="#">Terms</a></span>
+                <span><a href="#">Blog</a></span>
+                <span><a href="#">Sitemap</a></span>
+            </div>
+
+            <!-- <p class="disclaimer">By continuing past this page, you agree to our Terms of Service, Cookie Policy,
+                Privacy Policy and Content Policies. All trademarks are properties of their respective owners. © -->
+                <!-- 2008-2020 - Creaseart Pvt Ltd. All rights reserved.</p> -->
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/vendorDetails.js"></script>
+
+</body>
+
+</html>

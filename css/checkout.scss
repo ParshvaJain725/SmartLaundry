@@ -1,0 +1,371 @@
+body {
+    background-color: #f7f7f7;
+
+    header {
+        background-color: #fff;
+
+        .vendor_list_nav_one {
+            h5 {
+                margin-bottom: 0;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .checkout_section {
+        display: flex;
+        justify-content: space-between;
+    
+        .accordion {
+            .card {
+                box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.16);
+                margin-bottom: 2rem;
+                border-radius: 0rem;
+                border: none;
+                width: 100%;
+    
+                &:first-child {
+    
+                    .card-header {
+    
+                        .btn_symbol {
+                            padding: 0.5rem 1rem;
+                        }
+                    }
+                }
+    
+                &:nth-child(2) {
+    
+                    .card-header {
+    
+                        .btn_symbol {
+                            padding: 0.5rem 1rem;
+                        }
+                    }
+                }
+    
+                .card-header {
+                    background-color: #fff;
+    
+                    .btn_symbol {
+                        background-color: #fff;
+                        box-shadow: 0 4px 5px 0px rgba(0, 0, 0, 0.16);
+                        padding: 0.5rem 0.75rem;
+                        position: absolute;
+                        left: -2rem;
+                        top: 0.5rem;
+    
+                        .fa {
+                            font-size: 1.75rem;
+                        }
+                    }
+    
+                    button {
+                        color: #000;
+                        font-weight: 700;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                    }
+    
+                    .collapsed {
+                        color: #646464;
+                    }
+                }
+    
+                .card-body {
+                    .account_entry {
+                        margin-top: 1rem;
+    
+                        .login_btn,
+                        .signup_btn {
+    
+                            button {
+                                padding: 0.25rem 1rem;
+                                outline: none;
+                                cursor: pointer;
+    
+                                p {
+                                    margin-bottom: 0;
+        
+                                    &:last-child {
+                                        font-weight: 700;
+                                        text-transform: capitalize;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .login_btn {
+                            button {
+                                background-color: #fff;
+                                border: solid 2px #bc3935;
+                            }
+                        }
+    
+                        .signup_btn {
+                            button {
+                                background-color: #bc3935;
+                                border: solid 2px #bc3935;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .detail_cart {
+            background-color: #fff;
+            padding: 3rem 1.75rem;
+            box-shadow: 0 4px 5px -3px rgba(0, 0, 0, 0.16);
+            height: 100%;
+
+            h6 {
+                font-weight: 700;
+                font-size: 1.25rem;
+                text-transform: capitalize;
+            }
+    
+            table {
+                thead {
+                    border: none;
+                    border-bottom: solid 1.5px #646464;
+                    th {
+                        font-size: 16px;
+                        padding: 0.75rem 0;
+                        color: #646464;
+                        text-transform: uppercase;
+                    }
+                }
+                tbody {
+    
+                    tr {
+                        &:last-child {
+                            border-bottom: solid 1px #ededed;
+                        }
+                    
+                        td {
+                            font-size: 14px;
+                            padding: 0.75rem 0;
+                            text-transform: capitalize;
+    
+                            &:nth-child(2) {
+                                padding: 0 3rem;
+                            }
+    
+                            input {
+                                width: 50px;
+                                border: solid 0.3px #707070;
+                                border-left: none;
+                                border-right: none;
+                                outline: none;
+                                margin-left: -5px;
+                                margin-right: -5px;
+                                text-align: center;
+                                padding: 0.25rem 0;
+                            }
+    
+                            button {
+                                background-color: #fff;
+                                padding: 0.25rem;
+                                border: solid 0.3px #707070;
+                                outline: none;
+                                cursor: pointer;
+    
+                                &:first-child {
+                                    border-right: none;
+    
+                                }
+    
+                                &:last-child {
+                                    border-left: none;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                tfoot {
+                    
+                    tr {
+                        button {
+                            font-size: 16px;
+                            background-color: #fff;
+                            border-radius: 2px;
+                            color: #646464;
+                            border: dotted 2px #646464;
+                            padding: 0.75rem 5rem;
+                            margin-top: 0.5rem;
+                            cursor: pointer;
+                            outline: none;
+                            width: 100%;
+                            text-transform: capitalize;
+                        }
+
+                        &:nth-child(2) {
+                            th {
+                                padding-top: 1rem;
+                            }
+                        }
+
+                        &:nth-child(5) {
+                            td {
+                                padding-bottom: 0.75rem;
+                            }
+                        }
+
+                        &:last-child {
+                            th {
+                                padding: 0.5rem 0;
+                                border: none;
+                                border-top: solid 3px #000;
+                                border-bottom: solid 3px #000;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        th {
+                            font-size: 16px;
+                            text-transform: capitalize;
+                        }
+
+                        td {
+                            font-size: 14px;
+                            padding-top: 0.5rem;
+                            color: #646464;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#enter_coupon {
+
+    .modal-dialog {
+
+        .modal-content {
+
+            .modal-header {
+                button {
+                    outline: none;
+                }
+            }
+
+            .modal-body {
+
+                .coupon_code {
+                    border: none;
+                    border-bottom: solid 1.5px #646464;
+                    font-size: 15px;
+                    transition: 0.3s;
+                    margin: 1rem 0;
+                    margin-right: 5px;
+                    outline: none;
+                }
+            }
+
+            .modal-footer {
+
+                .apply {
+                    background-color: #bc3935;
+                    color: #fff;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .checkout_section #accordionExample {
+        width: 55%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    body .checkout_section {
+        display: grid;
+    }
+
+    .checkout_section #accordionExample {
+        width: unset;
+    }
+
+    .checkout_section #accordionExample, body .checkout_section {
+        justify-content: center;
+    }
+
+    body .checkout_section .detail_cart h6 {
+        text-align: center;
+    }
+
+    body .checkout_section .detail_cart table {
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .checkout_section #accordionExample, body .checkout_section .detail_cart {
+        width: 400px;
+    }
+
+    body .checkout_section .accordion .card .card-body .account_entry {
+        display: grid;
+        justify-content: center;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 484px) {
+    body .checkout_section .accordion .card .card-header {
+        display: flex;
+        padding: 0;
+    }
+
+    body .checkout_section .accordion .card .card-header .btn_symbol {
+        position: unset;
+        box-shadow: unset;
+    }
+
+    body .checkout_section .accordion .card .card-header button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 414px) {
+    body header .vendor_list_nav_one h5 {
+        font-size: 20px;
+    }
+
+    .checkout_section #accordionExample, body .checkout_section .detail_cart {
+        width: 315px;
+    }    
+
+    body .checkout_section .accordion .card .card-header button {
+        font-size: 16px;
+        white-space: unset;
+    }
+
+    body .checkout_section .accordion .card .card-body {
+        font-size: 0.75rem;
+    }
+
+    body .checkout_section .detail_cart table tbody tr td:nth-child(2) {
+        padding: 0 2rem;
+    }
+
+    body .checkout_section .detail_cart table tfoot tr button {
+        padding: 0.75rem 3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    body header .vendor_list_nav_one h5 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/vendor-list.css">
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <title>Checkout : Login</title>
+</head>
+
+<body>
+
+    <!-- Navigation header starts-->
+    <header class="vendor_list_nav">
+
+        <div class="vendor_list_nav_one">
+            <!-- <a href="index.html"><img src="img/creaseart_logo.png" alt="logo" class="logo"></a> -->
+            <h5>Secure Checkout</h5>
+        </div>
+
+        <!-- Menu starts -->
+        <div id="myNav" class="vendor_list_nav_two vendor_overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Cross icon which will appear when login/sign up form appears from side bar -->
+            <div class="vendor_content">
+                <!-- Search within web page -->
+                <form>
+                    <input type="text" name="search" placeholder="Search..">
+                </form>
+
+                <span><a href="#"><i class="fa fa-percent"></i> Offers</a></span>
+                <!-- Link to discounts offered by various vendors -->
+                <span><a href="#"><i class="fa fa-question-circle"></i> Help</a></span>
+                <!-- Help link related to the website -->
+                <span><a href="#signup" onclick="openSignform()"><i class="fa fa-user"></i> Sign Up</a></span>
+                <span><a href="#"><i class="fa fa-shopping-cart"></i> Cart</a></span>
+            </div>
+        </div>
+        <span class="ham-icon" onclick="openNav()">&#9776;</span>
+        <!-- Hamburger icon which will appear in place of menu in mobile view -->
+
+        <!-- Login Form Starts -->
+        <div id="login" class="overlay">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeLogform()">&times;</a>
+
+            <div class="overlay-content">
+
+                <h4>Login</h4>
+
+                <div class="login-content">
+                    <form action="" class="form">
+
+                        <div class="input-div one">
+                            <div class="div">
+                                <h5>Phone No.*</h5>
+                                <input type="tel" class="input" autocomplete="tel" name="phone"
+                                    pattern="{+91}-[0-9]{5}-[0-9]{5}" min="10" max="13" required>
+                            </div>
+                        </div>
+
+                        <input type="submit" class="btn" value="Log In" onclick="location.href='checkout_with_account.html';">
+                        <p>or <span><a href="#signup" onclick="openSignform()">create an account</a></span></p>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Login Forms ends -->
+
+        <!-- Sign Up form starts -->
+        <div id="signup" class="overlay">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSignform()">&times;</a>
+
+            <div class="overlay-content">
+
+                <h4>Sign Up</h4>
+
+                <div class="login-content">
+                    <form action="" class="form">
+
+                        <div class="input-div one">
+                            <div class="div">
+                                <h5>Phone No.*</h5>
+                                <input type="tel" class="input" autocomplete="tel" name="phone"
+                                    pattern="{+91}-[0-9]{5}-[0-9]{5}" min="10" max="13" required>
+                            </div>
+                        </div>
+
+                        <div class="input-div one">
+                            <div class="div">
+                                <h5>Name*</h5>
+                                <input type="text" class="input" autocomplete="name" required>
+                            </div>
+                        </div>
+
+                        <div class="input-div one">
+                            <div class="div">
+                                <h5>Email*</h5>
+                                <input type="email" class="input" autocomplete="email" required>
+                            </div>
+                        </div>
+
+                        <div class="input-div pass">
+                            <div class="div">
+                                <h5>Password*</h5>
+                                <input type="password" class="input signUppassword-input" required>
+                            </div>
+                        </div>
+
+                        <div class="input-div confirm_pass">
+                            <div class="div">
+                                <h5>Confirm Password*</h5>
+                                <input type="password" class="input confirm_password-input" required>
+                            </div>
+                        </div>
+
+                        <p class="error-message"></p>
+
+                        <input type="submit" class="btn" value="Sign Up" onclick="location.href='checkout_with_account.html';">
+                        <p>or <span><a href="#login" onclick="openLogform()">login to your account</a></span></p>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Sign Up form ends -->
+        <!-- Menu ends -->
+        <!-- Navigation header ends-->
+    </header>
+
+    <!-- Checkout section before login/sign up starts -->
+    <main class="checkout_section container">
+
+        <div class="accordion" id="accordionExample">
+            <!-- Login or Sign Up to account -->
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <span class="btn_symbol"><i class="fa fa-user"></i></span>
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Account
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        To place your order now, login to your existing account or sign up.
+                        <div class="account_entry">
+                            <span class="login_btn">
+                                <button onclick="openLogform()">
+                                    <p>Have an account?</p>
+                                    <p>LOGIN</p>
+                                </button>
+                            </span>
+                            <span class="signup_btn">
+                                <button onclick="openSignform()">
+                                    <p>New to Smart Laundry?</p>
+                                    <p>SIGN UP</p>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enter your delivery address -->
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <span class="btn_symbol"><i class="fa fa-map-marker"></i></span>
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Delivery Address
+                        </button>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Select date and time for pickup and delivery -->
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <span class="btn_symbol"><i class="fa fa-calendar"></i></span>
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Pickup and Delivery Date & Time
+                        </button>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Choose payment method -->
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <span class="btn_symbol"><i class="fa fa-credit-card"></i></span>
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Choose Payment Method
+                        </button>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Checkout -->
+        <div class="detail_cart">
+            <h6>Cart</h6>
+            <table>
+                <thead>
+                    <tr>
+                        <!-- To show total items in cart -->
+                        <th colspan="3">6 ITEMS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>T-shirt</td>
+                        <td>
+                            <button type="button" value="-" class="minus">-</button>
+                            <input type="text" value="1" name="quantity" />
+                            <button type="button" value="+" class="plus">+</button>
+                        </td>
+                        <td>&#8377; 100</td>
+                    </tr>
+                    <tr>
+                        <td>Jeans</td>
+                        <td>
+                            <button type="button" value="-" class="minus">-</button>
+                            <input type="text" value="1" name="quantity" />
+                            <button type="button" value="+" class="plus">+</button>
+                        </td>
+                        <td>&#8377; 120</td>
+                    </tr>
+                    <tr>
+                        <td>Kurta</td>
+                        <td>
+                            <button type="button" value="-" class="minus">-</button>
+                            <input type="text" value="1" name="quantity" />
+                            <button type="button" value="+" class="plus">+</button>
+                        </td>
+                        <td>&#8377; 50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <!-- Will go to checkout page -->
+                            <button type="submit" class="apply-coupon" data-toggle="modal" data-target="#enter_coupon">Apply Coupon</button>
+                        </td>
+                    </tr>
+
+                    <!-- Will be visible when clicked on 'apply coupon' button -->
+                    <div class="modal fade" id="enter_coupon" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Apply Coupon</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" class="coupon_code"/>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary apply">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <tr>
+                        <th colspan="3">Bill Details</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Item Total</td>
+                        <td>&#8377; 60</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Delivery Fee</td>
+                        <td>&#8377; 60</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Taxes & Charges</td>
+                        <td>&#8377; 60</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">TO PAY</th>
+                        <th>&#8377; 60</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_social_bar row">
+                <!-- <a href="index.html" class="col-lg-10"><img src="img/creaseart_logo.png" alt="logo" class="logo"></a> -->
+
+                <!-- Creaseart's social media links -->
+                <span class="footer_social_links col-lg-2">
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+                    <a href="" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                </span>
+            </div>
+            <div class="footer_sections row">
+                <div class="col-md">
+                    <h6>About Smart laundry</h6>
+                    <p>Laundry Application is an innovative and beneficial app designed by our company in an effort to
+                        modernise the laundry & dry-cleaning industry. It also offers the consumers to identify the
+                        right vendor for their cleaning needs.</p>
+                </div>
+                <div class="col-md">
+                    <h6>Important Links</h6>
+                    <p><a href="About_Us.html">About Us</a></p>
+                    <p><a href="#">Help & Support</a></p>
+                    <p><a href="#">Offers</a></p>
+                    <p><a href="#">Become a Partner</a></p>
+                </div>
+                <div class="col-md">
+                    <!-- <h6>Contact Us</h6>
+                    <p><i class="fa fa-map-marker"></i> <a
+                            href="https://www.google.com/maps/search/512,+5th+Floor,+Tower+A,+Spaze+I+Tech+Park,+Sohna+Road,+Sector+49,+122018+Gurugram,+Haryana/@28.4132101,77.0409667,17z/data=!3m1!4b1" target="_blank">512,
+                            5th Floor, Tower A, Spaze I Tech Park, Sohna Road, Sector 49, 122018 Gurugram, Haryana</a>
+                    </p>
+                    <p><i class="fa fa-phone"></i> <a href="tel:+918102020271"> +91 81020 20271</a></p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:info@creaseart.com"> info@creaseart.com</a></p> -->
+                    <span class="download_app_link">
+                        <img src="img/apple-ios-badge.png" alt="apple-ios-badge"> <!-- Link for ios app store. -->
+                        <img src="img/google-play-badge.png" alt="google-play-badge">
+                        <!-- Link for google play store. -->
+                    </span>
+                </div>
+            </div>
+
+            <div class="footer_sections_extra">
+                <span><a href="#">Privacy</a></span>
+                <span><a href="#">Terms</a></span>
+                <span><a href="#">Blog</a></span>
+                <span><a href="#">Sitemap</a></span>
+            </div>
+
+            <!-- <p class="disclaimer">By continuing past this page, you agree to our Terms of Service, Cookie Policy,
+                Privacy Policy and Content Policies. All trademarks are properties of their respective owners. ©
+                2008-2020 - Creaseart Pvt Ltd. All rights reserved.</p> -->
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/vendorDetails.js"></script>
+</body>
+
+</html>

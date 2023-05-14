@@ -1,0 +1,254 @@
+body {
+    main {
+        background-color: #f7f7f7;
+        padding: 2rem 5rem;
+
+        h1,
+        h4 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            max-width: 40%;
+            border-bottom: solid 1.5px #ededed;
+            margin: auto;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+
+        h4 {
+            margin-top: 1rem;
+            letter-spacing: 4px;
+            color: #bc3935;
+        }
+
+        .about_us-header {
+            img {
+                max-width: 100%;
+                border-radius: 1rem;
+                margin: 3rem 0;
+            }
+
+            p {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+                color: #646464;
+            }
+        }
+
+        .about_why_us {
+            margin: 3rem 0;
+
+            .row {
+                margin-top: 2rem;
+
+                span {
+                    padding: 3rem 2rem;
+                    box-shadow: 0 4px 10px -3px rgba(0, 0, 0, 0.16);
+                    background-color: #fff;
+                    text-align: center;
+                    max-width: 32%;
+                    margin: 0 auto;
+
+                    h4 {
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 1.25rem;
+                        line-height: 1.5rem;
+                        font-weight: 300;
+                        color: #646464;
+                    }
+                }
+            }
+        }
+
+        .about_us_know_more {
+            .row {
+                margin-top: 2rem;
+
+                span {
+                    padding: 0;
+                    box-shadow: 0 4px 10px -3px rgba(0, 0, 0, 0.16);
+                    background-color: #fff;
+                    text-align: unset;
+                    max-width: 32%;
+                    margin: 0 auto;
+
+                    img {
+                        max-width: 100%;
+                    }
+
+                    .blog_content {
+                        padding: 1rem;
+
+                        h4 {
+                            color: #000;
+                            font-size: 1rem;
+                            text-align: left;
+                            font-weight: 600;
+                            letter-spacing: 0;
+                        }
+    
+                        .date {
+                            font-size: 16px;
+                            color: #646464;
+                            font-weight: 200;
+                        }
+    
+                        .blog_brief {
+                            font-size: 0.75rem;
+                        }
+    
+                        .read_more {
+                            font-size: 0.85rem;
+                            font-weight: 600;
+                            text-transform: capitalize;
+                            color: #bc3935;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1199px) {
+    body main {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    body main .about_us-header p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    body main .about_why_us .row span h4 {
+        font-size: 1.15rem;
+    }
+
+    body main .about_why_us .row span p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media (max-width : 900px) {
+
+    body main h1 {
+        font-size: 2rem;
+    }
+
+    body main .about_why_us .row, body main .about_us_know_more .row {
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    body main .about_why_us .row span, body main .about_us_know_more .row span {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 854px) {
+    body main h1 {
+        max-width: 55%;
+    }
+}
+
+@media (max-width : 720px) {
+    body main h4 {
+        font-size: 1.15rem;
+    }
+
+    body main .about_why_us .row span, body main .about_us_know_more .row span {
+        max-width: 60%;
+    }    
+}
+
+@media (max-width: 600px) {
+
+    body main .about_us-header img {
+        margin: 2rem 0;
+    }
+
+    body main .about_us-header p {
+        font-size: 0.85rem;
+        line-height: 1.25rem;
+    }
+
+    body main .about_why_us .row span {
+        padding: 2rem 1rem
+    }
+
+    body main .about_why_us .row span, body main .about_us_know_more .row span {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 550px) {
+    body main h1 {
+        max-width: 60%;
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 484px) {
+
+    body main h1 {
+        max-width: 70%;
+    }
+
+    body main .about_why_us .row span, body main .about_us_know_more .row span {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 440px) {
+    body main .about_why_us .row span, body main .about_us_know_more .row span {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 414px) {
+    body main h1 {
+        font-size: 1.5rem;
+    }
+
+    body main h4 {
+        font-size: 1rem;
+    }
+
+    body main .about_why_us .row span p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 384px) {
+    body main {
+        padding: 2rem 1rem;
+    }
+
+    body main h1 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 340px) {
+    body main h4 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 0px) {
+    body header .vendor_list_nav_one h5 {
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+}
+

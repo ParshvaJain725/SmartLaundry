@@ -1,0 +1,174 @@
+.checkout_section {
+
+    .accordion {
+
+        .card {
+
+            &:first-child {
+
+                .card-header {
+
+                    .btn_symbol {
+                        background-color: #bc3935;
+                        top: 1.1rem;
+                        
+                        .fa-user {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .card-header {
+
+                button {
+
+                    .fa-check {
+                        color: #fff;
+                        background-color: rgb(20, 223, 20);
+                        padding: 0.15rem;
+                        border-radius: 50%;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        color: #646464;
+                        text-align: left;
+                        text-transform: capitalize;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .card-body {
+
+                max-width: 700px;
+
+                .addresses {
+                    display: flex;
+                    margin-bottom: 2rem;
+                }
+
+                .address {
+                    border: solid 1.5px #ededed;
+                    padding: 2rem 1rem;
+                    display: flex;
+                    width: 47%;
+                    margin-right: 1rem;
+
+                    .fa {
+                        margin-right: 1rem;
+                    }
+
+                    h6 {
+                        font-size: 20px;
+                        text-transform: capitalize;
+                    }
+
+                    p {
+                        color: #646464;
+                        font-size: 16px;
+                        text-transform: capitalize;
+
+                        strong {
+                            color: #000;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    button {
+                        text-transform: uppercase;
+                        padding: 0.5rem 2rem;
+                        font-size: 18px;
+                        cursor: pointer;
+                        outline: none;
+                    }
+
+                    .deliver_here {
+                        background-color: #bc3935;
+                        color: #fff;
+                        border: none;
+                    }
+
+                    .add_new {
+                        border: solid 1px #bc3935;
+                        color: #bc3935;
+                        background-color: #fff;
+                    }
+                }
+
+                .add_address {
+                    .address {
+                        box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.16);
+                        border-radius: 8px;
+                        border: none;
+                    }
+                }
+
+                .datetime_picker {
+                    border: solid 1px #bc3935;
+                    padding: 0.25rem;
+                    font-size: 16px;
+                    width: 265px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 993px) {
+
+    .checkout_section .accordion .card .card-body .addresses {
+        display: grid;
+        margin-bottom: unset;
+    }
+
+    .checkout_section .accordion .card .card-body .address {
+        width: unset;
+        margin-right: unset;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .checkout_section .accordion .card .card-body .addresses {
+        display: grid;
+        margin-bottom: unset;
+    }
+
+    .checkout_section .accordion .card .card-body .address {
+        width: unset;
+        margin-right: unset;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 563px) {
+
+    .daterangepicker.show-calendar .drp-buttons {
+        text-align: center;
+    }
+
+    .daterangepicker .drp-buttons .btn {
+        margin: 10px 8px 0 0 !important;
+        width: 45%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 484px) {
+
+    .checkout_section .accordion .card:first-child .card-header .btn_symbol .fa-user {
+        margin-top: 0.45rem;
+    }
+}
+
+@media (max-width: 414px) {
+
+    .checkout_section .accordion .card .card-body .address button {
+        padding: 0.75rem 2rem;
+        font-size: 16px;
+    }
+}
